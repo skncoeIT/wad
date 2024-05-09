@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Product Listing</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+        .product-image {
+            width: 50%;
+            margin: 0 auto;
+        }
+        .product-details {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div data-role="page" id="products">
+
+    <div data-role="header">
+        <h1>Products</h1>
+    </div>
+
+    <div data-role="content">
+
+        <ul data-role="listview" data-inset="true">  <li data-role="list-divider">Electronics</li>  <li>  <a href="#product-detail-1" data-transition="slide">
+                    <img src="product1.jpg" class="product-image" alt="Product 1">
+                    <h3 class="product-details">Product 1</h3>
+                    <p class="product-details">$19.99</p>
+                </a>
+            </li>
+
+            <li>  <a href="#product-detail-2" data-transition="slide">
+                    <img src="product2.jpg" class="product-image" alt="Product 2">
+                    <h3 class="product-details">Product 2</h3>
+                    <p class="product-details">$29.99</p>
+                </a>
+            </li>
+
+            <li data-role="list-divider">Clothing</li>
+
+            <li>  <a href="#product-detail-3" data-transition="slide">
+                    <img src="product3.jpg" class="product-image" alt="Product 3">
+                    <h3 class="product-details">Product 3</h3>
+                    <p class="product-details">$14.99</p>
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<div data-role="page" id="product-detail-1">  <div data-role="header">
+        <h1>Product 1 Details</h1>
+    </div>
+
+    <div data-role="content">
+
+        <img src="product1_detail.jpg" class="product-image" alt="Product 1 Details">
+        <p>Detailed description of Product 1 goes here.</p>
+
+    </div>
+
+</div>
+
+<div data-role="page" id="product-detail-2">  <div data-role="header">
+        <h1>Product 2 Details</h1>
+    </div>
+
+    <div data-role="content">
+
+        <img src="product2_detail.jpg" class="product-image" alt="Product 2 Details">
+        <p>Detailed description of Product 2 goes here.</p>
+
+    </div>
+
+</div>
+
+<div data-role="page" id="product-detail-3">  <div data-role="header">
+        <h1>Product 3 Details</h1>
+    </div>
+
+    <div data-role="content">
+
+        <img src="product3_detail.jpg" class="product-image" alt="Product 3 Details">
+        <p>Detailed description of Product 3 goes here.</p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

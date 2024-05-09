@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>College Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+    <div data-role="panel" id="myPanel">
+        <h2>Menu</h2>
+        <ul data-role="listview">
+            <li><a href="#homePage">Home</a></li>
+            <li><a href="#coursesPage">Courses</a></li>
+            <li><a href="#admissionsPage">Admissions</a></li>
+            <li><a href="#contactPage">Contact</a></li>
+        </ul>
+    </div>
+
+    <div data-role="page" id="homePage">
+        <div data-role="header">
+            <h1>Welcome to College</h1>
+            <a href="#myPanel" class="ui-btn ui-btn-icon-notext ui-icon-bars ui-corner-all">Open Panel</a>
+        </div>
+        <div data-role="main" class="ui-content">
+            <h2>About Us</h2>
+            <p>Welcome to our college. We offer a range of programs and services.</p>
+            <input type="range" name="slider-1" id="slider-1" min="0" max="100" value="50">
+            <p id="sliderValue">Slider Value: 50</p>
+
+            <!-- Grid Layout -->
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <img src="https://via.placeholder.com/150" alt="Image 1">
+                </div>
+                <div class="ui-block-b">
+                    <img src="https://via.placeholder.com/150" alt="Image 2">
+                </div>
+                <div class="ui-block-a">
+                    <img src="https://via.placeholder.com/150" alt="Image 3">
+                </div>
+                <div class="ui-block-b">
+                    <img src="https://via.placeholder.com/150" alt="Image 4">
+                </div>
+            </div>
+        </div>
+        <div data-role="footer">
+            <h4>&copy; 2024 College</h4>
+        </div>
+    </div>
+
+    <script>
+        $(document).on("change", "#slider-1", function () {
+            var value = $(this).val();
+            $("#sliderValue").text("Slider Value: " + value);
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combine jQuery</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="mainPage">
+        <div data-role="header">
+            <h1>Header</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <p style="text-align: center; width: 50%; margin: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quos nemo quibusdam mollitia dolorem doloremque commodi. Exercitationem repudiandae dicta amet. Numquam, quam consectetur temporibus, minus reiciendis ab quae impedit ratione in molestias suscipit consequatur.</p>
+            
+            <label for="slider-1">Slider:</label>
+            <input type="range" id="slider-1" min="0" max="100" value="50" data-highlight="true">
+
+            <!-- Panel  -->
+            <a href="#panel" class="ui-btn ui-btn-inline ui-btn-icon-">Open Panel</a>
+            <div data-role="panel" id="panel">
+                Top Panel
+            </div>
+
+            <!-- Dialogues -->
+            <div>
+                <p style="width: 40%; margin: auto;"><a href="#dialogue" class="ui-shadow ui-btn ui-corner-all ui-btn-inline">Open dialog</a></p>
+            </div>
+
+            <!-- Button -->
+            <div id="myButton" class="ui-btn" data-role="button">
+                Click 
+            </div>
+
+            <!-- GRID  -->
+            <div class="ui-grid-a">
+                <div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:60px">GRID A</div></div>
+                <div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:60px">GRID B</div></div>
+            </div>
+
+            <div>
+                <span> <a class="ui-btn ui-corner-all" href="#page3">Go to About Page</a></span>
+            </div>
+        </div>
+
+
+        
+
+        <div data-role="footer">
+            <h4>Footer content</h4>
+        </div>
+    </div>
+
+    <!-- Dialogue ka content Yaha hai  -->
+    <div data-role="page" id="dialogue" data-dialog="true">
+        <div data-role="header">
+            <h1>Dialogs</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <p>KYA DEKH RAHA HAI BKL</p>
+            <p><a href="#mainPage" class="ui-btn ui-corner-all">Back</a></p>
+        </div>
+    </div>
+
+    <div id="page3" data-role="page" class>
+        
+        <div class="ui-content" style="text-align: center;">This WAD PRACTICAL : 4A</div>
+        <span data-role="footer" class="ui-btn"><a href="#mainPage">Go Back</a></span>
+    </div>
+
+    <script>
+        $(document).on("pagecreate", function(){
+            $("#myButton").on("click", function(){
+                alert("Button clicked!");
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .sidebar {
+            background-color: black;
+            color: white;
+            padding: 15px;
+            height: 100vh; /* Set sidebar height to full viewport height */
+            position: sticky;
+            top: 0;
+        }
+
+        .sidebar-item {
+            padding: 10px;
+            font-size: large;
+            cursor: pointer;
+        }
+
+        .main-content {
+            padding: 2rem;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .badge {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar  -->
+            <div class="col-md-2 p-0">
+                <div class="sidebar d-flex flex-column justify-content-between"> <!-- Utilize flex utilities -->
+                    <div>
+                        <div class="jumbotron">
+                            <h4 style="padding-top: 1.9rem;">Student Admin</h4>
+                        </div>
+                        <ul class="nav flex-column mt-5">
+                            <li class="nav-item sidebar-item">Dashboard</li>
+                            <li class="nav-item sidebar-item">Exams</li>
+                            <li class="nav-item sidebar-item">Students</li>
+                            <li class="nav-item sidebar-item">Faculty</li>
+                            <li class="nav-item sidebar-item">News</li>
+                        </ul>
+                    </div>
+                   
+                </div>
+            </div>
+            <!-- Main Content  -->
+
+            <div class="col-md-10 main-content">
+                <h3 class="mb-4">Student Admin Dashboard</h3>
+                <div class="row gx-4">
+                    <div class="col-md-4">
+                        <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Exams Information">
+                            <div class="card-body">
+                                <h4 class="card-title">Results <span class="badge bg-primary">100</span></h4>
+                                <p>Click for More Details</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Exams Information">
+                            <div class="card-body">
+                                <h4 class="card-title">Topper  <span class="badge bg-secondary">1</span></h4>
+                                <p>Click for More Details</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Exams Information">
+                            <div class="card-body">
+                                <h4 class="card-title">Death <span class="badge bg-success">10</span></h4>
+                                <p>Click for More Details</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-9 register">
+                    <h2 class="text-center">Register</h2>
+                    <div class="container mt-5">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        Registration Form
+                                    </div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-group mb-4">
+                                                <label for="username">Username</label>
+                                                <input type="text" class="form-control" id="username"
+                                                    placeholder="Enter username">
+                                            </div>
+                                            <div class="form-group mb-4">
+                                                <label for="email">Email</label>
+                                                <input type="email" class="form-control" id="email"
+                                                    placeholder="Enter email">
+                                            </div>
+                                            <div class="form-group mb-4">
+                                                <label for="password">Password</label>
+                                                <input type="password" class="form-control" id="password"
+                                                    placeholder="Enter password">
+                                            </div>
+                                            <div class="form-group mb-4">
+                                                <label for="confirm_password">Confirm Password</label>
+                                                <input type="password" class="form-control" id="confirm_password"
+                                                    placeholder="Confirm password">
+                                            </div>
+
+                                            <div class="mt-4 mb-4">
+                                                <label for="">Select Branch</label>
+                                                <select name="" id="">
+                                                    <option value="">IT</option>
+                                                    <option value="">CS</option>
+                                                    <option value="">Mech</option>
+                                                </select>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
